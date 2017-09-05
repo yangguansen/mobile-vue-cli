@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <style>
+        *{
+            margin: 0;
+            pading: 0;
+            list-style: none;
+        }
+    </style>
+    <script>
+		const response = function () {
+			const w = document.documentElement.clientWidth;
+			document.documentElement.style.fontSize = w / 3.75 + 'px';
+		};
+		window.onresize = function () {
+			response();
+			clearTimeout( this.responseTimer );
+			this.responseTimer = setTimeout( response, 300 );
+		};
+		response();
+	</script>
+</head>
+<body>
+<div id="app"></div>
+</body>
+</html>

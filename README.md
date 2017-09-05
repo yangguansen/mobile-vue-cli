@@ -1,2 +1,18 @@
-# mobile-vue-cli
-自己学习搭建vue-cli，融合了px2rem插件，以及webpack各项配置。
+# vue
+
+> A Vue.js project
+
+## Build Setup
+
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+```
+
+For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
